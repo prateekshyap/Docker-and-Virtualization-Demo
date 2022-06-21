@@ -10,6 +10,12 @@ java -jar <jar_file_name> &
 ````
 This command runs the program
 
+# Steps to create a simple spring boot program
+
+1. Generate dependencies from [spring](https://start.spring.io/)
+2. Write the code inside src/main/java/...
+3. Build and using the above command
+
 # Steps to create docker image
 
 1. Create Dockerfile
@@ -24,7 +30,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 4. ````docker image rm <image_id>````
 5. ````docker ps -a````
 6. ````docker container rm <container_id>````
-7. ````docker build -t <image_name> .````
+7. ````docker build -t springio/gs-spring-boot-docker .````
 8. ````docker run <image_id>````
 9. ````ps aux | grep java````
 10. ````docker inspect <container_id>````
